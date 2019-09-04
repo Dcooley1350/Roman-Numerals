@@ -51,7 +51,7 @@ function toRoman(inputNumber) {
         var inputNumber = i;
     } else if (i >= 4) {
       romanNumber.push("IV");
-      console.log(i+"hey I'm in 4");
+      console.log(i);
       var i = (i - 4);
         var inputNumber = i;
     } else if (i >= 1) {
@@ -70,7 +70,6 @@ $(document).ready(function(){
     var inputNumber = parseInt($("input[name=numberInput]").val());
     toRoman(inputNumber);
     romanNumber = romanNumber.join("")
-
     console.log(romanNumber);
     $("p#results").text(romanNumber);
   });

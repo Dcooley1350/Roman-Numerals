@@ -1,0 +1,24 @@
+{
+  "name": "Roman-Numerals",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drewcpete/Roman-Numerals.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/drewcpete/Roman-Numerals/issues"
+  },
+  "homepage": "https://github.com/drewcpete/Roman-Numerals#readme",
+  "devDependencies": {
+    "webpack": "4.19.1",
+    "webpack-cli": "^2.0.9"
+  }
+}
