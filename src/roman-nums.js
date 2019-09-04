@@ -7,6 +7,32 @@ export var RomanNumber = function(inputNum, outputNum) {
 RomanNumber.prototype.checkType = function() {
   if ((this.inputNum >= 3999) || (this.inputNum < 0)) {
     return "not a valid number";
+  } else {
+    return "valid number"
+  }
+};
+
+RomanNumber.prototype.checkThousand = function(){
+  if(this.inputNum >= 1000) {
+    return true;
+  } else {
+    return false;
+  }
+};
+
+RomanNumber.prototype.checkNineHundo = function(){
+  if((this.inputNum >= 900) && (this.inputNum < 1000)){
+    return true;
+  } else {
+    return false;
+  }
+};
+
+RomanNumber.prototype.checkFiveHundo = function(){
+  if((this.inputNum >= 500) && (this.inputNum < 900)){
+    return true;
+  } else {
+    return false;
   }
 };
 
