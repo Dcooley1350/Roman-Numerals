@@ -4,11 +4,18 @@ export var RomanNumber = function(inputNum, outputNum) {
   this.outputNum = outputNum;
 };
 
+RomanNumber.prototype.checkType = function() {
+  if ((this.inputNum >= 3999) || (this.inputNum < 0)) {
+    return "not a valid number";
+  }
+};
 
 RomanNumber.prototype.toRoman = function() {
   this.outputNum = [];
   for (var i = this.inputNum; i > 0; i += 0) {
-    if (i >= 1000) {
+    if ((i >= 3999) || (i < 0)) {
+      alert("The number you entered is not valid.  Please select a number between 0 and 4000.")
+    } else if (i >= 1000) {
       this.outputNum.push("M");
       var i = (i - 1000);
       this.inputNum = i;
